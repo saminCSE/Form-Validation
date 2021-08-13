@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="samin.ico" />
+    <title>Form Validation - by Samin</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>Register</h2></div>
+
+      <form action="submit.html" class="form" id="form">
+        <div class="form-control">
+          <label for="">First name</label>
+          <input
+            type="text"
+            placeholder="First name"
+            class="fname"
+            id="fname"
+          />
+          <small class="fnameError" id="fnameError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Last name</label>
+          <input type="text" placeholder="Last name" class="lname" id="lname" />
+          <small class="lnameError" id="lnameError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">User name</label>
+          <input type="text" placeholder="user name" class="uname" id="uname" />
+          <small class="lnameError" id="unameError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email</label>
+          <input type="email" placeholder="Email" class="email" id="email" />
+          <small class="emailError" id="emailError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Mobile number</label>
+          <input
+            type="number"
+            placeholder="mobile number"
+            class="num"
+            id="num"
+          />
+          <small class="numError" id="numError">Error Message</small>
+        </div>
+        Show Password<input type="checkbox" onclick="myFunction()" />
+        <div class="form-control">
+          <label for="">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            class="password"
+            id="password"
+          />
+          <small class="passError" id="passError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="confirm-password"
+            class="cpassword"
+            id="cpassword"
+          />
+          <small class="cpassError" id="cpassError">Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Website Url</label>
+          <input type="text" placeholder="website url" class="url" id="url" />
+          <small class="urlError" id="urlError">Error Message</small>
+        </div>
+
+        <input type="submit" class="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="validation.js"></script>
+</html>
