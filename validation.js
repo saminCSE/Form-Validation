@@ -8,7 +8,7 @@ $(document).ready(function () {
   $("#cpassError").hide();
   $("#urlError").hide();
 
-  // errors are all false rn (error nahi hai abhi)
+  // errors are all false
   let error_fname = false;
   let error_lname = false;
   let error_uname = false;
